@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ainul | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AINUL HAQ</div>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="tagline">Building Secure & Modern Web Solutions</p>
+      <h1>Hi, I am <span>Ainul Haq</span><br> Software Engineer & Web Developer</h1>
+      <div class="buttons">
+        <a href="#contact" class="btn primary">Hire me</a>
+        <a href="./assets/Re_AHU.pdf" class="btn outline" download>Download CV</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="bg-skew"></div>
+      <img src="./assets/profile.jpg" alt="Ainul Haq" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container about-grid">
+      <div class="about-img">
+        <img src="./assets/profile2.jpg" alt="Profile Picture">
+      </div>
+      <div class="about-content">
+        <h5 class="section-subtitle">MY INTRODUCTION</h5>
+        <h2>About Me</h2>
+        <p>
+          Final-year B.Tech Computer Science (Cyber Security) student with solid understanding of software engineering,
+          DSA, and secure coding practices. Experienced in building scalable web apps and applying cybersecurity fundamentals.
+        </p>
+        <div class="about-details">
+          <p><strong>Name:</strong> Ainul Haq</p>
+          <p><strong>Address:</strong> Lakhimpur Kheri, Uttar Pradesh, India</p>
+          <p><strong>Zip code:</strong> 262701</p>
+          <p><strong>Email:</strong> ainulhaq0003@gmail.com</p>
+          <p><strong>Phone:</strong> +91 9532801786</p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/imainulhaq" target="_blank">linkedin.com/in/imainulhaq</a></p>
+        </div>
+        <div class="interests">
+          <span><i class="fas fa-code"></i> Music</span>
+          <span><i class="fas fa-shield-alt"></i> Travel</span>
+          <span><i class="fas fa-book"></i> Painting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-slider">
+      <div class="skills-track">
+        <div class="skill-card"><img src="./assets/c.png" class="skill-icon" alt="C" /><h4>C</h4></div>
+        <div class="skill-card"><img src="./assets/cpp.png" class="skill-icon" alt="C++" /><h4>C++</h4></div>
+        <div class="skill-card"><img src="./assets/python.png" class="skill-icon" alt="Python" /><h4>Python</h4></div>
+        <div class="skill-card"><img src="./assets/java.png" class="skill-icon" alt="Java" /><h4>Java</h4></div>
+        <div class="skill-card"><img src="./assets/html.png" class="skill-icon" alt="HTML" /><h4>HTML</h4></div>
+        <div class="skill-card"><img src="./assets/css.png" class="skill-icon" alt="CSS" /><h4>CSS</h4></div>
+        <div class="skill-card"><img src="./assets/javascript.png" class="skill-icon" alt="JavaScript" /><h4>JavaScript</h4></div>
+        <div class="skill-card"><img src="./assets/react.png" class="skill-icon" alt="React" /><h4>React.js</h4></div>
+        <div class="skill-card"><img src="./assets/next.js.png" class="skill-icon" alt="Next.js" /><h4>Next.js</h4></div>
+        <div class="skill-card"><img src="./assets/node js.png" class="skill-icon" alt="Node.js" /><h4>Node.js</h4></div>
+        <div class="skill-card"><img src="./assets/sql.png" class="skill-icon" alt="MySQL" /><h4>MySQL</h4></div>
+        <div class="skill-card"><img src="./assets/github.png" class="skill-icon" alt="GitHub" /><h4>GitHub</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="./assets/project1.jpg" alt="Project 1" />
+        <div class="project-info">
+          <h3>Telly Beans – Food Delivery</h3>
+          <p>React.js, Node.js, MongoDB, Tailwind</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./assets/project2.jpg" alt="Project 2" />
+        <div class="project-info">
+          <h3>The Book Velvet – Library System</h3>
+          <p>HTML, CSS, JS, React, Node, MongoDB</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <form class="contact-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Name" required /></div>
+        <div class="form-group"><input type="email" id="email" name="email" placeholder="Your Email" required /></div>
+        <div class="form-group"><textarea rows="5" id="message" name="message" placeholder="Your Message" required></textarea></div>
+        <div class="button-group">
+          <button type="button" class="btn primary" onclick="sendWhatsApp()">Send WhatsApp</button>
+          <button type="submit" class="btn outline">Send Email</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <h3>AINUL.DEV</h3>
+      <p>Crafting Secure & Scalable Solutions ✨</p>
+      <div class="social-icons">
+        <a href="http://github.com/iamainul" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/imainulhaq" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="copyright">© 2025 Ainul Haq. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
